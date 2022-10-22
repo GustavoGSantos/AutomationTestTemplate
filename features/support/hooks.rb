@@ -17,12 +17,12 @@ at_exit do
     options = {
       report_title: 'Automation - Template Tests',
       color: 'light-blue',
-      html_report_path: "report/relatorio/relatorio_testes_#{Time.now.strftime('%d_%m_%Y_%H_%M_%S')}", # Translate to english
+      html_report_path: "report/reports/relatorio_testes_#{Time.now.strftime('%d_%m_%Y_%H_%M_%S')}",
       json_path: 'report/json/cucumber.json',
       additional_info: {  'Version' => '1.0.0',
                           'Browser' => BROWSER,
                           'Environment' => ENVIRONMENT,
-                          'Date execution' => Time.now.strftime('%d/%m/%Y %H:%M:%S') #getlocal(00:00)
+                          'Date execution' => Time.now.strftime('%d/%m/%Y %H:%M:%S')
                        }
     }
     ReportBuilder.build_report options
