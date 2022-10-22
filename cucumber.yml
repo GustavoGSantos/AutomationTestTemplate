@@ -1,0 +1,11 @@
+---
+default: --profile pretty -p stage -p chrome -p json --publish-quiet
+
+pretty: --format pretty
+progress: --format progress
+stage: ENVIRONMENT=stage
+dev: ENVIRONMENT=dev
+chrome: BROWSER=chrome
+chrome_headless: BROWSER=chrome_headless
+html: --format html --out report/reports/reports.html
+json: --format json --out report/json/cucumber.json
