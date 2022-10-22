@@ -5,11 +5,12 @@ Feature: Login
 @ValidationLogin
 Scenario Outline: Validating login feature
   Given I am in login page
-  When I login with e-mail "<email>" and password "<password>"
-  Then I expect to see "<message>"
+  When I login with e-mail "<Email>" and password "<Password>"
+  Then I expect to see "<Message>"
 
-  Examples:
-  |email                  |password|message                   |
-  |                       |12345678|Invalid email or password.|
-  |testautomation@test.com|        |Invalid email or password.|
-  |testautomation@test.com|12345678|My Dashboard              |
+Examples:
+|Email                  |Password    |Message                                                                  |
+|                       |12345678    |Epic sadface: Username is required                                       |
+|testautomation@test.com|            |Epic sadface: Password is required                                       |
+|test                   |123456789203|Epic sadface: Username and password do not match any user in this service|
+|standard_user          |secret_sauce|PRODUCTS                                                                 |

@@ -9,5 +9,6 @@ When('I login with e-mail {string} and password {string}') do |email, password|
 end
 
 Then('I expect to see {string}') do |message|
-  
+  login_message = login.message_login
+  expect(message).to eq login_message
 end
