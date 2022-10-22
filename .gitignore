@@ -1,5 +1,5 @@
 report/json/cucumber.json
-report/relatorio/*.html
+report/reports/*.html
 Gemfile.lock
 report/screenshots/test_failed/*.png
 report/screenshots/test_passed/*.png
