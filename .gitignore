@@ -1,6 +1,6 @@
 report/json/cucumber.json
 report/relatorio/*.html
 Gemfile.lock
-report/screenshots/test_falhou/*.png
-report/screenshots/test_passou/*.png
+report/screenshots/test_failed/*.png
+report/screenshots/test_passed/*.png
 *.lock
